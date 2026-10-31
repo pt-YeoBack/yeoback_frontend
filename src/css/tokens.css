@@ -1,28 +1,50 @@
+/*
+ * 여백 디자인 토큰 — Figma "희수 - react. 코드 전체 짜기 시연" 페이지에서 추출
+ * 색 이름은 Figma 화면별 텍스트 색을 기준으로 붙였습니다.
+ */
 :root {
-  /* 브랜드 */
+  /* Brand */
   --brand-900: #203b69;
-  --brand-700: #244790;   /* 기본 버튼, 제목 */
-  --brand-600: #20668c;   /* 보조 글자 */
-  --brand-300: #84afff;   /* 강조 테두리 */
-  --brand-50:  #f1f5fc;   /* 온보딩 아이콘 배경 */
+  --brand-700: #244790; /* Primary 버튼, 헤더(로그인·비밀번호 찾기·이메일 확인) */
+  --brand-600: #20668c; /* 보조 텍스트(로그인·이메일 확인) */
+  --brand-300: #84afff; /* 강조 테두리 */
+  --brand-50: #f1f5fc; /* 온보딩 아이콘 배경 */
+  --sky-50: #f3f8ff; /* 이메일 일러스트 배경 */
 
-  /* 무채색 */
+  /* Neutrals */
   --ink-900: #111827;
+  --ink-700: #374151;
+  --ink-600: #4b5563;
   --ink-500: #6b7280;
   --ink-200: #e5e7eb;
+  --ink-100: #f3f4f6;
+  --slate-900: #0f172a;
+  --slate-700: #334155;
+  --slate-600: #475569;
+  --slate-500: #64748b;
+  --slate-400: #94a3b8;
+  --slate-300: #cbd5e1;
+  --slate-50: #f8fafc;
   --gray-onboarding: #727d8d;
   --frame-border: #dde5ee;
 
-  /* 상태 */
+  /* Social (Figma 그대로) */
+  --naver: #03c75a;
+  --kakao: #fee500;
+
+  /* 상태 색 — Figma에 오류/성공 색이 정의되어 있지 않아 브랜드와 어울리게 추가 */
   --danger: #d14343;
   --danger-bg: #fff5f5;
+  --success: #1f7a55;
+  --success-border: #2f9e6e;
 
-  /* 크기 */
-  --radius-input: 15px;
+  /* Radius / size */
+  --radius-input: 14px;
   --radius-card: 22px;
   --radius-frame: 32px;
   --input-height: 50px;
   --button-height: 52px;
 
-  --font-ko: 'Noto Sans KR', system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif;
+  --font-ko: 'Noto Sans KR', 'Noto Sans CJK KR', system-ui, -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  --font-num: 'Inter', var(--font-ko);
 }
