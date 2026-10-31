@@ -1,0 +1,28 @@
+:root {
+  /* 브랜드 */
+  --brand-900: #203b69;
+  --brand-700: #244790;   /* 기본 버튼, 제목 */
+  --brand-600: #20668c;   /* 보조 글자 */
+  --brand-300: #84afff;   /* 강조 테두리 */
+  --brand-50:  #f1f5fc;   /* 온보딩 아이콘 배경 */
+
+  /* 무채색 */
+  --ink-900: #111827;
+  --ink-500: #6b7280;
+  --ink-200: #e5e7eb;
+  --gray-onboarding: #727d8d;
+  --frame-border: #dde5ee;
+
+  /* 상태 */
+  --danger: #d14343;
+  --danger-bg: #fff5f5;
+
+  /* 크기 */
+  --radius-input: 15px;
+  --radius-card: 22px;
+  --radius-frame: 32px;
+  --input-height: 50px;
+  --button-height: 52px;
+
+  --font-ko: 'Noto Sans KR', system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif;
+}
