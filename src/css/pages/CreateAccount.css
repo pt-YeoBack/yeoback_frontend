@@ -1,0 +1,286 @@
+.create-account {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 402px;
+    min-height: 100dvh;
+    margin: 0 auto;
+    background-color: #ffffff;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.create-account :where(button) {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.create-account :where(img) {
+    display: block;
+    flex-shrink: 0;
+}
+
+/* 상단 네비게이션 */
+.create-account-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 56px;
+    padding: 0 20px;
+}
+
+.create-account-nav-back,
+.create-account-nav-more {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.create-account-nav-back {
+    width: 32px;
+}
+
+.create-account-nav-more {
+    width: 36px;
+}
+
+.create-account-nav-title {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    color: #111827;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+/* 본문 */
+.create-account-content {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 16px 24px 24px;
+}
+
+.create-account-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    line-height: 1.5;
+}
+
+.create-account-title {
+    margin: 0;
+    color: #111827;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.create-account-subtitle {
+    margin: 0;
+    color: #6b7280;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* 폼 */
+.create-account-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.create-account-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.create-account-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.create-account-label {
+    color: #374151;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.create-account-input {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 50px;
+    padding: 12px 14px;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+}
+
+.create-account-input:focus-within {
+    border-color: #2563eb;
+}
+
+.create-account-input input {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    background: transparent;
+    color: #374151;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.create-account-input input::placeholder {
+    color: #374151;
+    opacity: 1;
+}
+
+.create-account-eye {
+    display: flex;
+}
+
+.create-account-eye[aria-pressed="true"] {
+    opacity: 0.4;
+}
+
+.create-account-hint {
+    margin: 0;
+    color: #6b7280;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* 약관 동의 */
+.create-account-consents {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.create-account-consent {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.create-account-consent-toggle {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-align: left;
+    color: #374151;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.create-account-consent-detail {
+    display: flex;
+}
+
+.create-account-submit {
+    height: 52px;
+    border-radius: 14px;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.create-account-submit:hover {
+    background-color: #1d4ed8;
+}
+
+/* 소셜 로그인 */
+.create-account-divider {
+    margin: 0;
+    color: #6b7280;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.create-account-socials {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 24px;
+    list-style: none;
+}
+
+.create-account-social {
+    width: 82px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.create-account-social-btn {
+    box-sizing: border-box;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+.create-account-social-btn.google {
+    border: 1px solid #e5e7eb;
+    background-color: #ffffff;
+}
+
+.create-account-social-btn.naver {
+    background-color: #03c75a;
+}
+
+.create-account-social-btn.kakao {
+    background-color: #fee500;
+}
+
+.create-account-social-label {
+    color: #4b5563;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.create-account-login {
+    margin: 0;
+    color: #6b7280;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.create-account-login-link {
+    margin-left: 8px;
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
